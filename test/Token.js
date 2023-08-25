@@ -1,9 +1,8 @@
 const {ethers} = require('hardhat')
 const {expect} = require('chai')
-const {ZeroAddress} = require("ethers");
 
 const tokens = (n) => {
-    return ethers.parseUnits(n.toString(), 'ether')
+    return ethers.utils.parseUnits(n.toString(), 'ether')
 }
 describe('Token', () => {
 
